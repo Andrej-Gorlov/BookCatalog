@@ -3,21 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCatalog", "BookCatalog\BookCatalog.csproj", "{4729A512-CA42-4276-8526-B5A52653A5F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookCatalog", "BookCatalog\BookCatalog.csproj", "{4729A512-CA42-4276-8526-B5A52653A5F3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{243AED82-2C81-41EB-9788-AB7AA062C6FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCatalog.Domain", "BookCatalog.Domain\BookCatalog.Domain.csproj", "{C1CDA2CD-7F6D-421D-AD68-29155377B369}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookCatalog.Domain", "BookCatalog.Domain\BookCatalog.Domain.csproj", "{C1CDA2CD-7F6D-421D-AD68-29155377B369}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{03CA569E-ECDB-4F54-915D-4EC9B8592F83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCatalog.DAL", "BookCatalog.DAL\BookCatalog.DAL.csproj", "{FFF4B233-C964-4B77-A51C-0C823E7C9125}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookCatalog.DAL", "BookCatalog.DAL\BookCatalog.DAL.csproj", "{FFF4B233-C964-4B77-A51C-0C823E7C9125}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{FF8B4212-09B0-4908-BC21-C8D140C54D42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCatalog.Service", "BookCatalog.Service\BookCatalog.Service.csproj", "{CF53CCCC-3EDF-4958-BE37-34F008BA5276}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookCatalog.Service", "BookCatalog.Service\BookCatalog.Service.csproj", "{CF53CCCC-3EDF-4958-BE37-34F008BA5276}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCatalog.Test", "BookCatalog.Test\BookCatalog.Test.csproj", "{25B5E50D-6C52-4FA1-BCAB-228F81C3ACAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookCatalog.Test", "BookCatalog.Test\BookCatalog.Test.csproj", "{25B5E50D-6C52-4FA1-BCAB-228F81C3ACAC}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{1A185B8D-A8F7-4EE5-BA48-4C57DFA02FCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{25B5E50D-6C52-4FA1-BCAB-228F81C3ACAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25B5E50D-6C52-4FA1-BCAB-228F81C3ACAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25B5E50D-6C52-4FA1-BCAB-228F81C3ACAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A185B8D-A8F7-4EE5-BA48-4C57DFA02FCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A185B8D-A8F7-4EE5-BA48-4C57DFA02FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A185B8D-A8F7-4EE5-BA48-4C57DFA02FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A185B8D-A8F7-4EE5-BA48-4C57DFA02FCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
