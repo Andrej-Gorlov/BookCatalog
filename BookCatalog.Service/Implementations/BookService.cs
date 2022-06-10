@@ -21,8 +21,8 @@ namespace BookCatalog.Service.Implementations
             {
                 model.ISBN = new string(model.ISBN.Insert(3, "-").Insert(5, "-").Insert(14, "-"));
             }
-            var books = await _bookRep.CreateAsync(model);
-            if (model is null)
+            var book = await _bookRep.CreateAsync(model);
+            if (book is null)
             {
                 baseResponse.DisplayMessage = "Книга создана.";
             }
@@ -30,7 +30,7 @@ namespace BookCatalog.Service.Implementations
             {
                 baseResponse.DisplayMessage = "Книга не создана.";
             }
-            baseResponse.Result = books;
+            baseResponse.Result = book;
             return baseResponse;
         }
         public async Task<IBaseResponse<bool>> DeleteServiceAsync(int id)
@@ -106,7 +106,7 @@ namespace BookCatalog.Service.Implementations
             var baseResponse = new BaseResponse<BookDto>();
             BookDto book = await _bookRep.UpdateAsync(model);
             baseResponse.DisplayMessage = "Книга обновилась.";
-            baseResponse.Result = model;
+            baseResponse.Result = book;
             return baseResponse;
         }
         public async Task<IBaseResponse<PagedList<string>>> GetByGenreServiceAsync(PagingQueryParameters paging, string genre)
